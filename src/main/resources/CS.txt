@@ -1,0 +1,22 @@
+1
+Dai So Tuyen Tinh, Nhap Mon Tin Hoc, Co So Lap Trinh
+2
+Giai Tich, Ky Thuat Lap Trinh, Kien Truc May Tinh
+3
+Cau Truc Du Lieu va Giai Thuat 1, Ung Dung Web, He Dieu Hanh
+4
+Xac Xuat Thong Ke, Triet Hoc Mac - Lenin, Cau Truc Du Lieu va Giai Thuat 2, Co So Du Lieu, Mang May Tinh
+5
+Kinh Te Chinh Tri Mac - Lenin, Lap Trinh Huong Doi Tuong, Phan Tich Thiet Ke He Thong, Toan Roi Rac
+6
+Chu Nghia Xa Hoi Khoa Hoc, Lap Trinh Giao Dien, Quan Tri He Co So Du Lieu, Ky Nang Nghe Nghiep
+7
+Lich Su Dang Cong San Viet Nam, Mon Tu Chon 1
+8
+Tu Tuong Ho Chi Minh, Mon Tu Chon 2
+9
+Phap Luat, Mon Tu Chon 3, Do An Nganh
+10
+Thuc Tap Tot Nghiep
+11
+Khoa Luan Tot Nghiep hoac Mon Tu Chon 4, Mon Tu Chon 5

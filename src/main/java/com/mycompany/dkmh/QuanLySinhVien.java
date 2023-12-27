@@ -6,13 +6,17 @@ package com.mycompany.dkmh;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
  *
- * @author 84334
+ * @author MSI
  */
 public class QuanLySinhVien {
 
@@ -48,6 +52,36 @@ public class QuanLySinhVien {
         }
     }
 
+    public void docChinhQuy(String maSV) throws IOException, ParseException {
+        String duongDan = "src/main/resources/SinhVien.txt";
+        List<String> dong = Files.readAllLines(Paths.get(duongDan));
+        int viTri = dong.indexOf(maSV);
+        if (viTri != -1) {
+            String tenSV = dong.get(viTri + 1);
+            String ngaySinh = dong.get(viTri + 2);
+            String gioiTinh = dong.get(viTri + 3);
+            String maLop = dong.get(viTri + 4);
+            String hinhThuc = "Hoc tai co so quy dinh.";
+            SinhVien sv = new ChinhQuy(maSV, tenSV, ngaySinh, gioiTinh, maLop, hinhThuc);
+            sv.hienThi();
+        }
+    }
+
+    public void docDTTX(String maSV) throws IOException, ParseException {
+        String duongDan = "src/main/resources/SinhVien.txt";
+        List<String> dong = Files.readAllLines(Paths.get(duongDan));
+        int viTri = dong.indexOf(maSV);
+        if (viTri != -1) {
+            String tenSV = dong.get(viTri + 1);
+            String ngaySinh = dong.get(viTri + 2);
+            String gioiTinh = dong.get(viTri + 3);
+            String maLop = dong.get(viTri + 4);
+            String hinhThuc = "Hoc online co huong dan";
+            String thoiGian = "2-3 nam";
+            SinhVien sv = new DaoTaoTuXa(maSV, tenSV, ngaySinh, gioiTinh, maLop, hinhThuc, thoiGian);
+            sv.hienThi();
+        }
+    }
 
     public SinhVien timKiem(String kw) {
         for (SinhVien s : dsSinhVien) {
@@ -65,4 +99,5 @@ public class QuanLySinhVien {
     public void setDsSinhVien(ArrayList<SinhVien> dsSinhVien) {
         this.dsSinhVien = dsSinhVien;
     }
+
 }

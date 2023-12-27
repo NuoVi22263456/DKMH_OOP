@@ -1,0 +1,61 @@
+2505001
+Truong Hoang Vinh
+22/05/1978
+Nam
+2405001
+Pham Hung Cam Huyen Anh
+30/12/1979
+Nu
+2405002
+Nguyen Trung Hau
+21/5/1997
+Nam
+2405003
+Nguyen Van Bay
+03/07/1999
+Nam
+2505002
+Nguyen Tien Dat
+20/03/1963
+Nam
+2505003
+Phan Tran Minh Khue
+30/04/1976
+Nam
+2505004
+Duong Huu Thanh
+28/09/1989
+Nam
+2505005
+Ho Quang Khai
+01/01/1969
+Nam
+2505006
+Nguyen Thi Mai Trang
+02/02/1986
+Nu
+2505007
+Vo Thi Kim Anh
+03/03/1985
+Nu
+2505008
+Nguyen Thi Phuong Trang
+04/04/1989
+Nu
+2505009
+Le Ngoc Hieu
+05/05/1898
+Nam
+2505010
+Ho Van Thanh
+06/06/1989
+Nam
+2505011
+Ho Huong Thien
+07/07/1989
+Nam
+2505012
+Pham Chi Cong
+08/08/1989
+Nam
+

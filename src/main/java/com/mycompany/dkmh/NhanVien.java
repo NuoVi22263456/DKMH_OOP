@@ -12,50 +12,54 @@ import java.util.Date;
  *
  * @author MSI
  */
-public class SinhVien {
+public abstract class NhanVien {
 
     private static final SimpleDateFormat f = new SimpleDateFormat("dd/mm/yyyy");
-    private String maSV;
-    private String hoTen;
+    private String maID;
+    private String tenNhanVien;
     private Date ngaySinh;
     private String gioiTinh;
-    private String maLop;
 
-    public SinhVien(String maSV, String hoTen, String ngaySinh, String gioiTinh, String maLop) throws ParseException {
-        this.maSV = maSV;
-        this.hoTen = hoTen;
+    public NhanVien(String maID, String tenNhanVien, String ngaySinh, String gioiTinh) throws ParseException {
+
         this.ngaySinh = f.parse(ngaySinh);
+        this.maID = maID;
+        this.tenNhanVien = tenNhanVien;
         this.gioiTinh = gioiTinh;
-        this.maLop = maLop;
     }
 
     public String getTen() {
-        return "Ma Sinh Vien";
+        return "Ma Nhan Vien";
     }
 
     public void hienThi() {
-        System.out.printf(getTen() + ": %s\n", this.maSV);
-        System.out.printf("Ho Ten: %s\n", this.hoTen);
+        System.out.printf(getTen() + ": %s\n", this.maID);
+        System.out.printf("Ho Ten: %s\n", this.tenNhanVien);
         System.out.printf("Ngay sinh: %s\n", f.format(ngaySinh));
         System.out.printf("Gioi Tinh: %s\n", this.gioiTinh);
-        System.out.printf("Lop: %s\n", this.maLop);
         System.out.println("-----------------------------------");
     }
 
-    public String getMaSV() {
-        return maSV;
+    public abstract double layHeSo();
+
+    public double tinhLuong() {
+        return layHeSo() * 6500000;
     }
 
-    public void setMaSV(String maSV) {
-        this.maSV = maSV;
+    public String getMaID() {
+        return maID;
     }
 
-    public String getHoTen() {
-        return hoTen;
+    public void setMaID(String maID) {
+        this.maID = maID;
     }
 
-    public void setHoTen(String HoTen) {
-        this.hoTen = HoTen;
+    public String getTenNhanVien() {
+        return tenNhanVien;
+    }
+
+    public void setTenNhanVien(String tenNhanVien) {
+        this.tenNhanVien = tenNhanVien;
     }
 
     public Date getNgaySinh() {
@@ -73,13 +77,4 @@ public class SinhVien {
     public void setGioiTinh(String gioiTinh) {
         this.gioiTinh = gioiTinh;
     }
-
-    public String getMaLop() {
-        return maLop;
-    }
-
-    public void setMaLop(String maLop) {
-        this.maLop = maLop;
-    }
-
 }
